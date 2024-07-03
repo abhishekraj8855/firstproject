@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form in HTML AND CSS</title>
+    <link rel="stylesheet" href="style.css"
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"popping",sans-serif;
+        }
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('https://tse2.mm.bing.net/th?id=OIP.GgVivFX4AsNMLn8qr3w9kgHaEi&pid=Api&P=0&h=180') no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        }
+        .wrapper{
+            width: 429px;
+            background:transparent;
+            border: 2px solid rgba(255, 255,255, .2);
+            backdrop-filter:blur(20px);
+            box-shadow:0 0 0 rgba(0,0,0, .2);
+            color: beige;
+            border-radius: 10px;
+            padding: 30px 40px;
+            
+
+        }
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .input-box{
+            width: 100px;
+            height: 100px;
+            background: salmon;
+            margin: 30px 0;
+        }
+        .input-box input{
+            width: 100px;
+            height: 100px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255,255, .2)
+            border-radius: 40px;
+            color:#fff;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder{
+            color: #fff;
+        }
+        .input-box img{
+            position: absolute;
+            right: 20px;
+            top: 50px;
+            transform: translate(-50);
+            font-size: 20px;
+        }
+        .wrapper .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+        .remember-forgot label input{
+            accent-color:#fff;
+            margin-right: 3px;
+
+        }
+        .remember-forgot a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .remember-forgot a:hover{
+            text-decoration: underline;
+        }
+        .wrapper.btn{
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        .wrapper .register-link{
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px 0 15px;
+        }
+        .register-link p a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .register-link p a:hover{
+            text-decoration: underline;
+            width:auto;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>login</h1>
+            <div class="input box">
+                <input type="text"placeholder="username" required>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPRJREFUSEvNlWENwjAQhb8pAAmgAJCAA3AACpAAKCAoQAJIQAIOQAIogLxkDdC1vWVlZPfnsqx53/Xd7lbQchQt61MXMAbWgLLiAmzLnKyxDmAGHCMqc+CUIliAPnAFlENxB4aAcjAsQKp6JzgFzk0Bm9L7lAvqhc518wby/gb0IgU+gEFOD6Tb6lfkCtf3L58/50DPmofsObA0ugtQg1dlD5w1frWySJO8jzU6NmgLYJeYYB+kSV6G1kYIIPFDQ+Mru8kHWLvH4lZ2kw+osxosyNfq8AFq2shSMN5LY+LO+IBnpnhF9++AH13gLWP9cLKBrQNeWrEoGRxI2IoAAAAASUVORK5CYII="/>
+            </div>
+            <div class="input box" >
+                <input type="password" placeholder="password"required> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOBJREFUSEvtlfENATEUxn83gZgAk2ADG2ACMQE2sAEbMAKTYAMbuHxJRVXbdye5ROL6zzXNe9/v9bv2taDhUTSsT1XABFgAI1fQCdgA+mZHFcAemCZUBFnnCBZAlR+cwBI4uvkMWLn5OLcTCyALhoDEt0GlqlyQs2fdx2YswMNldIF7kN0HLm4tqVMVkIp7FvBnAJ31HSCP64wrMA9PVMw7BfbqKHuxyh34uTGA+eMS8GheC/Ddai0yD+7vWKSu2THrjQfcwg4QuwdqFXrF6t5mieshentGrXb95UZeaY0DSpPxMBnmGORhAAAAAElFTkSuQmCC"/>
+                
+
+            </div>
+            <div class="remember- forget">
+                <label><input type="checkbox">remember me</label>
+                <a href="#"forget password ?> forget password</a>
+
+            </div>
+            <button type="submit"class="btn">login</button>
+            <div class="register-link"></div>
+            <p>don'n have account?
+            <a href="#"register>register</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>
